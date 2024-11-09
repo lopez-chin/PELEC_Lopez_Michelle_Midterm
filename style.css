@@ -208,10 +208,8 @@ h2 {
 .contact-links a:active {
     transform: scale(0.98); 
 }
-
-
 .goals {
-    background: linear-gradient(135deg, #a5ddec, #d47cea); /* Soft gradient background */
+    background: linear-gradient(135deg, #a5ddec, #d47cea);
     padding: 2rem 1rem;
     text-align: center;
 }
@@ -220,7 +218,7 @@ h2 {
     max-width: var(--max-width);
     margin: auto;
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
+    background: rgba(255, 255, 255, 0.85); 
     border-radius: 10px;
 }
 
@@ -295,7 +293,7 @@ h2 {
     margin-bottom: 3rem;
 }
 
-.action_btns{
+.action_btns a {
     display: flex;
     gap: 1rem;
 }
@@ -311,13 +309,17 @@ h2 {
     transition: 0.3s;
     cursor: pointer;
 } 
+.action_btns a .About:hover {
+    background-color: #5c0581; /* Hover color */
+    transform: scale(1.05);
+}
 
-.Midterm{
+.About Me{
     background-color: var(--primary-color);
     color: #ffffff;
 }
 
-.Midterm:hover{
+.About Me:hover{
     background-color: var(--primary-color-dark);
 }
 
@@ -325,12 +327,19 @@ h2 {
     color: var(--primary-color);
     border: 2px solid var(--primary-color);
 }
+.Porfolio :hover{
+    background-color: var(--primary-color-dark);
+}
 
 .image{
     display: grid;
     place-items: center;
+
 }
 
+html {
+    scroll-behavior: smooth;
+}
 .image img{
     width: min(30rem, 90%);
     border-radius: 200%;
